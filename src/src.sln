@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "observer", "observer\observer.csproj", "{F389969C-6BB5-4827-903B-7B762268FC3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "observer.Test", "observer.Test\observer.Test.csproj", "{EF185664-A16C-46C6-B87F-3C0C33991C8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F389969C-6BB5-4827-903B-7B762268FC3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F389969C-6BB5-4827-903B-7B762268FC3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F389969C-6BB5-4827-903B-7B762268FC3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F389969C-6BB5-4827-903B-7B762268FC3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF185664-A16C-46C6-B87F-3C0C33991C8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF185664-A16C-46C6-B87F-3C0C33991C8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF185664-A16C-46C6-B87F-3C0C33991C8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF185664-A16C-46C6-B87F-3C0C33991C8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
