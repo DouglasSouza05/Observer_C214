@@ -1,10 +1,14 @@
-﻿namespace observer
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+
+namespace Main
 {
-    public class Class1
+    class Program
     {
-        public static void Main()
+        static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello World!");
         }
     }
 }

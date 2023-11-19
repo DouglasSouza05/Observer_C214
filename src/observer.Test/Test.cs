@@ -1,10 +1,10 @@
 namespace observer.Test;
 
 [TestClass]
-public class MeuTeste
+public class Test
 {
     [TestMethod]
-    public void MeuMetodoDeTeste()
+    public void MétodoTeste()
     {
         // Seu código de teste aqui
         Assert.IsTrue(true);
