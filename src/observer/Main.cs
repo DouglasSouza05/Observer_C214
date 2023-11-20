@@ -1,6 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using Application;
 
 namespace Main
 {
@@ -8,7 +6,24 @@ namespace Main
     {
         static void Main()
         {
-            Console.WriteLine("Hello World!");
+            WordCounter wordCounter = new WordCounter();
+            List<String> words;
+
+            words = wordCounter.SplitWords("Hello World");
+
+            // Agora você pode imprimir a lista de palavras
+            foreach (var palavra in words)
+            {
+                Console.WriteLine(palavra);
+            }
+
+            Console.WriteLine();
+
+            Console.WriteLine(wordCounter.CountWords(words));
+
+            Console.WriteLine();
+
+            Console.WriteLine(wordCounter.CountEvenWords(words));
         }
     }
 }
