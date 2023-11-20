@@ -9,6 +9,8 @@ namespace Observavel
 
         private List<Subscriber>? observadores;
         private List<String>? palavras;
+        List<String>? splittedWords;
+        int words, evenWords, upperWords;
 
         public WordsCounter()
         {
@@ -27,20 +29,23 @@ namespace Observavel
 
         public void NotifyObservers()
         {
-
             if (observadores != null)
             {
-
                 foreach (var observer in observadores)
                 {
-                    observer.Update();
+                    observer.Update(Words, EvenWords, UpperWords);
                 }
-
             }
         }
 
         public void Application(String frase)
         {
+            splittedWords = SplitWords(frase);
+
+            words = CountWords(splittedWords);
+            evenWords = CountEvenWords(splittedWords);
+            upperWords = CountWordsWithUpperCase(splittedWords);
+
             NotifyObservers();
         }
 
@@ -125,6 +130,21 @@ namespace Observavel
             return contador;
 
             // Console.WriteLine("Contador Palavras Começadas com Upper Case: " + contador);
+        }
+
+        public int Words
+        {
+            get { return words; }
+        }
+
+        public int EvenWords
+        {
+            get { return evenWords; }
+        }
+
+        public int UpperWords
+        {
+            get { return upperWords; }
         }
     }
 }
