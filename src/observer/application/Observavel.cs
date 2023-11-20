@@ -39,31 +39,33 @@ namespace Observavel
             }
         }
 
-        public List<String> SplitWords(String frase)
+        public void SplitWords(String frase)
         {
             palavras = new List<String>();
             char[] delimitadores = { ';', ':', '"', '(', ')', '[', ']', '{', '}', '/', ',', '!', '.', '?', ' ', '\\', '\'', '=', '*', '&', '%', '$', '#', '@', '-', '_', '+', '~', '^', '¨' };
 
             palavras.AddRange(frase.Split(delimitadores, StringSplitOptions.RemoveEmptyEntries));
 
-            return palavras;
+            Console.WriteLine("Frase digitada: " + frase);
         }
 
-        public int CountWords(List<String> palavras)
+        public void CountWords(List<String> palavras)
         {
             if (palavras == null)
             {
-                return 0;
+                Console.WriteLine("Lista vazia. Nenhuma frase foi enviada!");
+                return;
             }
 
-            return palavras.Count;
+            Console.WriteLine("Contador Palavras Totais: " + palavras.Count);
         }
 
-        public int CountEvenWords(List<String> palavras)
+        public void CountEvenWords(List<String> palavras)
         {
             if (palavras == null)
             {
-                return 0;
+                Console.WriteLine("Lista vazia. Nenhuma frase foi enviada!");
+                return;
             }
 
             int contador = 0;
@@ -79,14 +81,15 @@ namespace Observavel
                 else continue;
             }
 
-            return contador;
+            Console.WriteLine("Contador Palavras Pares: " + contador);
         }
 
-        public int CountWordsWithUpperCase(List<String> palavras)
+        public void CountWordsWithUpperCase(List<String> palavras)
         {
             if (palavras == null)
             {
-                return 0;
+                Console.WriteLine("Lista vazia. Nenhuma frase foi enviada!");
+                return;
             }
 
             int contador = 0;
@@ -102,7 +105,7 @@ namespace Observavel
                 else continue;
             }
 
-            return contador;
+            Console.WriteLine("Contador Palavras Começadas com Upper Case: " + contador);
         }
     }
 }

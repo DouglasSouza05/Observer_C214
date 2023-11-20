@@ -1,4 +1,5 @@
-﻿using Observavel;
+﻿using Observador;
+using Observavel;
 
 namespace Main
 {
@@ -6,36 +7,20 @@ namespace Main
     {
         static void Main()
         {
-            WordsCounter wordCounter = new WordsCounter();
-            List<String> words;
+            WordsCounter observavel = new WordsCounter();
+            String frase;
 
-            words = wordCounter.SplitWords("Hello World");
+            Subscriber observador1 = new Subscriber(id: 0, nome: "Isabel");
+            Subscriber observador2 = new Subscriber(id: 1, nome: "Zézin");
+            Subscriber observador3 = new Subscriber(id: 2, nome: "Carlito");
 
-            Console.WriteLine("Palavras Separadas:", "\n");
+            observavel.AddObserver(observador1);
+            observavel.AddObserver(observador3);
 
-            // Agora você pode imprimir a lista de palavras
-            foreach (var palavra in words)
-            {
-                Console.WriteLine(palavra);
-            }
+            frase = "Hello Precious World!";
 
-            Console.WriteLine();
+            observavel.SplitWords(frase);
 
-            Console.WriteLine("Contador Palavras Totais:", "\n");
-
-            Console.WriteLine(wordCounter.CountWords(words));
-
-            Console.WriteLine();
-
-            Console.WriteLine("Contador Palavras Pares:", "\n");
-
-            Console.WriteLine(wordCounter.CountEvenWords(words));
-
-            Console.WriteLine();
-
-            Console.WriteLine("Contador Palavras Iniciadas com Upper Case:", "\n");
-
-            Console.WriteLine(wordCounter.CountWordsWithUpperCase(words));
         }
     }
 }
