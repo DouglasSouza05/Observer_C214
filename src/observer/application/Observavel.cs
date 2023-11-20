@@ -10,10 +10,6 @@ namespace Observavel
         private List<Subscriber>? observadores;
         private List<String>? palavras;
 
-        int words = 0;
-        int pares = 0;
-        int upper = 0;
-
         public WordsCounter()
         {
             observadores = new List<Subscriber>();
@@ -45,10 +41,6 @@ namespace Observavel
 
         public void Application(String frase)
         {
-            palavras = SplitWords(frase);
-            words = CountWords(palavras);
-            pares = CountEvenWords(palavras);
-            upper = CountWordsWithUpperCase(palavras);
             NotifyObservers();
         }
 
@@ -59,7 +51,13 @@ namespace Observavel
 
             palavras.AddRange(frase.Split(delimitadores, StringSplitOptions.RemoveEmptyEntries));
 
-            // Console.WriteLine("Frase digitada: " + frase);
+            // Console.WriteLine("Frase Digitada: " + frase);
+            // Console.WriteLine();
+            // foreach (var item in palavras)
+            // {
+            //     Console.WriteLine(item);
+            // }
+            // Console.WriteLine();
 
             return palavras;
         }
@@ -69,7 +67,7 @@ namespace Observavel
             if (palavras == null)
             {
                 Console.WriteLine("Lista vazia. Nenhuma frase foi enviada!");
-                return 0;
+                return 1;
             }
 
             return palavras.Count;
@@ -127,21 +125,6 @@ namespace Observavel
             return contador;
 
             // Console.WriteLine("Contador Palavras Começadas com Upper Case: " + contador);
-        }
-
-        public int Words
-        {
-            get { return words; }
-        }
-
-        public int Pares
-        {
-            get { return pares; }
-        }
-
-        public int Upper
-        {
-            get { return upper; }
         }
     }
 }
