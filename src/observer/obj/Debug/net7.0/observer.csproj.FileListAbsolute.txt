@@ -12,3 +12,17 @@ C:\Users\Douglas\Desktop\Inatel\Atividades Inatel - 8 Semestre\Observer_C214\src
 C:\Users\Douglas\Desktop\Inatel\Atividades Inatel - 8 Semestre\Observer_C214\src\observer\bin\Debug\net7.0\observer.exe
 C:\Users\Douglas\Desktop\Inatel\Atividades Inatel - 8 Semestre\Observer_C214\src\observer\bin\Debug\net7.0\observer.runtimeconfig.json
 C:\Users\Douglas\Desktop\Inatel\Atividades Inatel - 8 Semestre\Observer_C214\src\observer\obj\Debug\net7.0\observer.genruntimeconfig.cache
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\bin\Debug\net7.0\observer.exe
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\bin\Debug\net7.0\observer.deps.json
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\bin\Debug\net7.0\observer.runtimeconfig.json
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\bin\Debug\net7.0\observer.dll
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\bin\Debug\net7.0\observer.pdb
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.AssemblyInfoInputs.cache
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.AssemblyInfo.cs
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.csproj.CoreCompileInputs.cache
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.dll
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\refint\observer.dll
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.pdb
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\observer.genruntimeconfig.cache
+C:\Users\JR\Desktop\Inatel\Inatel Semestre P8\Observer_C214\src\observer\obj\Debug\net7.0\ref\observer.dll

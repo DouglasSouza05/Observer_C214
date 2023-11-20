@@ -2,7 +2,7 @@ using System.Diagnostics.Contracts;
 
 namespace Application
 {
-    public class WordCounter
+    public class WordsCounter
     {
         private List<String>? palavras;
 

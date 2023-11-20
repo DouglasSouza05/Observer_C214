@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\observer.csproj": {}
+    "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\observer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\observer.csproj": {
+    "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\observer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\observer.csproj",
+        "projectUniqueName": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\observer.csproj",
         "projectName": "observer",
-        "projectPath": "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\observer.csproj",
-        "packagesPath": "C:\\Users\\Douglas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\obj\\",
+        "projectPath": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\observer.csproj",
+        "packagesPath": "C:\\Users\\JR\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Douglas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\JR\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {

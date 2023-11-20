@@ -6,7 +6,7 @@ namespace Main
     {
         static void Main()
         {
-            WordCounter wordCounter = new WordCounter();
+            WordsCounter wordCounter = new WordsCounter();
             List<String> words;
 
             words = wordCounter.SplitWords("Hello World");
