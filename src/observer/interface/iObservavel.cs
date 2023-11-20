@@ -1,7 +1,7 @@
 namespace iObservavel
 {
 
-    public interface WordsCounterObservavel
+    public interface WordsCounterIObservavel
     {
 
         public void AddObserver(String observador);
