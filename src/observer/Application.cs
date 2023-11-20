@@ -49,5 +49,27 @@ namespace Application
             return contador;
         }
 
+        public int CountWordsWithUpperCase(List<String> palavras)
+        {
+            if (palavras == null)
+            {
+                return 0;
+            }
+
+            int contador = 0;
+
+            // List<String> palavrasPares = new List<String>();
+
+            foreach (var word in palavras)
+            {
+                if (char.IsUpper(word[0]))
+                {
+                    contador += 1;
+                }
+                else continue;
+            }
+
+            return contador;
+        }
     }
 }
