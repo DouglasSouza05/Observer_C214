@@ -1,12 +1,14 @@
+using Observador;
+
 namespace iObservavel
 {
 
     public interface WordsCounterIObservavel
     {
 
-        public void AddObserver(String observador);
+        public void AddObserver(Subscriber observador);
 
-        public void RemoveObserver(String observador);
+        public void RemoveObserver(Subscriber observador);
 
         public void NotifyObservers();
 

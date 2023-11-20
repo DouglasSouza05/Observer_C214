@@ -1,6 +1,5 @@
 using System.Diagnostics.Contracts;
 using iObservador;
-using iObservavel;
 
 namespace Observador
 {
@@ -8,16 +7,18 @@ namespace Observador
     public class Subscriber : SubscriberIObservador
     {
 
+        int id;
         String nome;
 
-        public Subscriber(String nome)
+        public Subscriber(int id, String nome)
         {
 
+            this.id = id;
             this.nome = nome;
 
         }
 
-        public void Update(String observavel)
+        public void Update()
         {
 
         }

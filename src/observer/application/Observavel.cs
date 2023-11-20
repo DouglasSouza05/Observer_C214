@@ -1,27 +1,43 @@
 using System.Diagnostics.Contracts;
 using iObservavel;
+using Observador;
 
 namespace Observavel
 {
     public class WordsCounter : WordsCounterIObservavel
     {
 
-        public void AddObserver(String observador)
-        {
+        private List<Subscriber>? observadores;
+        private List<String>? palavras;
 
+        public WordsCounter()
+        {
+            observadores = new List<Subscriber>();
         }
 
-        public void RemoveObserver(String observador)
+        public void AddObserver(Subscriber observador)
         {
+            observadores?.Add(observador);
+        }
 
+        public void RemoveObserver(Subscriber observador)
+        {
+            observadores?.Remove(observador);
         }
 
         public void NotifyObservers()
         {
 
-        }
+            if (observadores != null)
+            {
 
-        private List<String>? palavras;
+                foreach (var observer in observadores)
+                {
+                    observer.Update();
+                }
+
+            }
+        }
 
         public List<String> SplitWords(String frase)
         {
