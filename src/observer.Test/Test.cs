@@ -21,7 +21,7 @@ namespace UnitTest.Aplication
             var observavel = new WordsCounter();
             var observador = new Subscriber(1, "Test_Subscribe");
             observavel.AddObserver(observador);
-            
+
             observavel.Application("Testando Quantidade de Palavras com Upper Case");
 
             Assert.AreEqual(5, observavel.UpperWords);
@@ -37,6 +37,18 @@ namespace UnitTest.Aplication
             observavel.Application("Testando Contagem de Palavras Pares");
 
             Assert.AreEqual(4, observavel.EvenWords);
+        }
+
+        [TestMethod]
+        public void TestNumeroDePalavrasNaFrase()
+        {
+            var observavel = new WordsCounter();
+            var observador = new Subscriber(1, "TestSubscriber");
+            observavel.AddObserver(observador);
+
+            observavel.Application("Testando o numero de palavras em cada frase");
+
+            Assert.AreEqual(8, observavel.Words);
         }
     }
 }
