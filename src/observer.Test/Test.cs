@@ -8,13 +8,6 @@ namespace UnitTest.Aplication
     [TestClass]
     public class Test
     {
-        Program p;
-
-        public Test()
-        {
-            p = new Program();
-        }
-
         [TestMethod]
         public void TestContagemPalavrasUpperCase()
         {
