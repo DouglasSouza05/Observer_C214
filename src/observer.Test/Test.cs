@@ -2,8 +2,7 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Observador;
 using Observavel;
 using System;
-using Moq;
-using System.Collections.Generic;
+
 
 namespace UnitTest.Aplication
 {
@@ -52,7 +51,7 @@ namespace UnitTest.Aplication
             var wordsCounter = new WordsCounter();
             var subscriber = new Subscriber(1, "TestSubscriber");
             wordsCounter.AddObserver(subscriber);
-            
+
             string inputPhrase = "";
             wordsCounter.Application(inputPhrase);
 
