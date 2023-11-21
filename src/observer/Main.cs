@@ -11,19 +11,18 @@ namespace Main
             String frase;
 
             Subscriber observador0 = new Subscriber(id: 0, nome: "Isabel");
-            Subscriber observador1 = new Subscriber(id: 1, nome: "Zézin");
-            Subscriber observador2 = new Subscriber(id: 2, nome: "Carlito");
+            Subscriber observador1 = new Subscriber(id: 1, nome: "Carlito");
 
-            Console.WriteLine("Adicionando Observadores 0 e 2!" + "\n");
+            frase = "Chris melhor professor Ever. Da um 10 ae Please !!!";
+
+            Console.WriteLine("Adicionando Observadores " + observador0.ID + " e " + observador1.ID + "\n");
             observavel.AddObserver(observador0);
-            observavel.AddObserver(observador2);
-
-            frase = "Hello Precious World!";
+            observavel.AddObserver(observador1);
 
             Console.WriteLine("Inserindo Frase no Observavel..." + "\n");
             observavel.Application(frase);
 
-            Console.WriteLine("Removendo Observador 0!" + "\n");
+            Console.WriteLine("Removendo Observador " + observador0.ID + "\n");
             observavel.RemoveObserver(observador0);
 
             Console.WriteLine("Inserindo Frase no Observavel..." + "\n");

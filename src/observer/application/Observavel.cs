@@ -33,7 +33,7 @@ namespace Observavel
             {
                 foreach (var observer in observadores)
                 {
-                    observer.Update(Words, EvenWords, UpperWords);
+                    observer.Update(this);
                 }
             }
         }
