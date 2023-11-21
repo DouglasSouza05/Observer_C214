@@ -45,18 +45,23 @@ namespace UnitTest.Aplication
 
             Assert.AreEqual(8, observavel.Words);
         }
-
-         [TestMethod]
-        public void TestNotifyObservers()
+        
+        [TestMethod]
+        public void TestEmptyPhrase()
         {
-            var observadorMock = new Mock<Subscriber>(1, "TestSubscriber");
-            var observavel = new WordsCounter();
+            // Arrange
+            var wordsCounter = new WordsCounter();
+            var subscriber = new Subscriber(1, "TestSubscriber");
+            wordsCounter.AddObserver(subscriber);
+            string inputPhrase = "";
 
-            observavel.AddObserver(observadorMock.Object);
+            // Act
+            wordsCounter.Application(inputPhrase);
 
-            observavel.NotifyObservers();
-
-            observadorMock.Verify(o => o.Update(It.IsAny<WordsCounter>()), Times.Once);
+            // Assert
+            Assert.AreEqual(0, wordsCounter.Words);
+            Assert.AreEqual(0, wordsCounter.EvenWords);
+            Assert.AreEqual(0, wordsCounter.UpperWords);
         }
     }
 }
