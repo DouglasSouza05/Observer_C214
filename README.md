@@ -1,3 +1,6 @@
+[![build](https://github.com/DouglasSouza05/Observer_C214/actions/workflows/workflow.yml/badge.svg)](https://github.com/DouglasSouza05/Observer_C214/actions/workflows/workflow.yml)
+
+
 # Exercício Prático de Design Patterns - Observer_C214
 
 Atividade de Engenharia de Software utilizando padrão Observer
