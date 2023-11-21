@@ -45,20 +45,17 @@ namespace UnitTest.Aplication
 
             Assert.AreEqual(8, observavel.Words);
         }
-        
+
         [TestMethod]
         public void TestEmptyPhrase()
         {
-            // Arrange
             var wordsCounter = new WordsCounter();
             var subscriber = new Subscriber(1, "TestSubscriber");
             wordsCounter.AddObserver(subscriber);
+            
             string inputPhrase = "";
-
-            // Act
             wordsCounter.Application(inputPhrase);
 
-            // Assert
             Assert.AreEqual(0, wordsCounter.Words);
             Assert.AreEqual(0, wordsCounter.EvenWords);
             Assert.AreEqual(0, wordsCounter.UpperWords);
