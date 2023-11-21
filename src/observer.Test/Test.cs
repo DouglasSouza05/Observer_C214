@@ -18,30 +18,26 @@ namespace UnitTest.Aplication
         [TestMethod]
         public void TestContagemPalavrasUpperCase()
         {
-            // Arrange
             var observavel = new WordsCounter();
             var observador = new Subscriber(1, "Test_Subscribe");
             observavel.AddObserver(observador);
             
-            observavel.Application("Testando UpperCase");
+            observavel.Application("Testando Quantidade de Palavras com Upper Case");
 
-            Assert.AreEqual(2, observavel.UpperWords);
+            Assert.AreEqual(5, observavel.UpperWords);
         }
 
-        // [TestMethod]
-        // public void TestObservador_ContagemPalavrasPares()
-        // {
-        //     // Arrange
-        //     var observavel = new WordsCounter();
-        //     var observador = new Subscriber(1, "TestSubscriber");
-        //     observavel.AddObserver(observador);
+        [TestMethod]
+        public void TestContagemPalavrasPares()
+        {
+            var observavel = new WordsCounter();
+            var observador = new Subscriber(1, "TestSubscriber");
+            observavel.AddObserver(observador);
 
-        //     // Act
-        //     observavel.Application("This is a test sentence.");
+            observavel.Application("Testando Contagem de Palavras Pares");
 
-        //     // Assert
-        //     Assert.AreEqual(2, observavel.EvenWords);
-        // }
+            Assert.AreEqual(4, observavel.EvenWords);
+        }
     }
 }
 
