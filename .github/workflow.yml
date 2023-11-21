@@ -29,17 +29,4 @@ jobs:
       - name: Run tests
         run: |
             cd src
-            dotnet test /p:CollectCoverage=true /p:CoverletOutput=./TestResults/ /p:CoverletOutputFormat=lcov
-
-      - name: Install report generator
-        run: dotnet tool install --global dotnet-reportgenerator-globaltool
-
-      - name: Generating report tests
-        run: |
-             cd src
-             reportgenerator -reports:./TestResults/coverage.info -targetdir:./coverage_reports --reporttypes:Html
-      - name: Creating Artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: TestResults
-          path: src/coverage_reports/
+            dotnet test
