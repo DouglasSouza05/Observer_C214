@@ -1,12 +1,34 @@
-namespace observer.Test;
+using Microsoft.VisualStudio.TestPlatform.TestHost;
+using Observador;
+using Observavel;
+using System;
 
-[TestClass]
-public class Test
+namespace UnitTest.Aplication
 {
-    [TestMethod]
-    public void MétodoTeste()
+    [TestClass]
+    public class Test
     {
-        // Seu código de teste aqui
-        Assert.IsTrue(true);
+        Program p;
+
+        public Test()
+        {
+            p = new Program();
+        }
+
+        [TestMethod]
+        public void TestContagemPalavrasUpperCase()
+        {
+            // Arrange
+            var observavel = new WordsCounter();
+            var observador = new Subscriber(1, "TestSubscriber");
+            observavel.AddObserver(observador);
+
+            // Act
+            observavel.Application("This is a test sentence.");
+
+            // Assert
+            Assert.AreEqual(1, observavel.UpperWords);
+        }
     }
 }
+
