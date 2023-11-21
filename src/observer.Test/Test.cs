@@ -20,15 +20,28 @@ namespace UnitTest.Aplication
         {
             // Arrange
             var observavel = new WordsCounter();
-            var observador = new Subscriber(1, "TestSubscriber");
+            var observador = new Subscriber(1, "Test_Subscribe");
             observavel.AddObserver(observador);
+            
+            observavel.Application("Testando UpperCase");
 
-            // Act
-            observavel.Application("This is a test sentence.");
-
-            // Assert
-            Assert.AreEqual(1, observavel.UpperWords);
+            Assert.AreEqual(2, observavel.UpperWords);
         }
+
+        // [TestMethod]
+        // public void TestObservador_ContagemPalavrasPares()
+        // {
+        //     // Arrange
+        //     var observavel = new WordsCounter();
+        //     var observador = new Subscriber(1, "TestSubscriber");
+        //     observavel.AddObserver(observador);
+
+        //     // Act
+        //     observavel.Application("This is a test sentence.");
+
+        //     // Assert
+        //     Assert.AreEqual(2, observavel.EvenWords);
+        // }
     }
 }
 
