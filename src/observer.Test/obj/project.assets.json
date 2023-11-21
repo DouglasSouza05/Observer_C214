@@ -2313,39 +2313,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\JR\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\eduar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer.Test\\observer.Test.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer.Test\\observer.Test.csproj",
       "projectName": "observer.Test",
-      "projectPath": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer.Test\\observer.Test.csproj",
-      "packagesPath": "C:\\Users\\JR\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer.Test\\obj\\",
+      "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer.Test\\observer.Test.csproj",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer.Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\JR\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\observer.csproj": {
-              "projectPath": "C:\\Users\\JR\\Desktop\\Inatel\\Inatel Semestre P8\\Observer_C214\\src\\observer\\observer.csproj"
+            "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer\\observer.csproj": {
+              "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer\\observer.csproj"
             }
           }
         }
@@ -2393,7 +2386,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }

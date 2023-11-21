@@ -37,7 +37,7 @@ jobs:
       - name: Generating report tests
         run: |
              cd src
-             reportgenerator -reports:./observer.Tests/TestResults/coverage.info -targetdir:./src.Tests/coverage_reports --reporttypes:Html
+             reportgenerator -reports:./observer.Tests/TestResults/coverage.info -targetdir:./observer.Tests/coverage_reports --reporttypes:Html
       - name: Creating Artifact
         uses: actions/upload-artifact@v3
         with:

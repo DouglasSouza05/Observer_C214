@@ -8,19 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\Douglas\\.nuget\\packages\\": {}
+    "C:\\Users\\eduar\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\observer.csproj",
+      "projectUniqueName": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer\\observer.csproj",
       "projectName": "observer",
-      "projectPath": "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\observer.csproj",
-      "packagesPath": "C:\\Users\\Douglas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Douglas\\Desktop\\Inatel\\Atividades Inatel - 8 Semestre\\Observer_C214\\src\\observer\\obj\\",
+      "projectPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer\\observer.csproj",
+      "packagesPath": "C:\\Users\\eduar\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\eduar\\OneDrive\\Documentos\\Inatel\\C214\\Observer_C214\\src\\observer\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Douglas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\eduar\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -59,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.403\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.404\\RuntimeIdentifierGraph.json"
       }
     }
   }
