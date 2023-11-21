@@ -2,6 +2,8 @@ using Microsoft.VisualStudio.TestPlatform.TestHost;
 using Observador;
 using Observavel;
 using System;
+using Moq;
+using System.Collections.Generic;
 
 namespace UnitTest.Aplication
 {
@@ -42,6 +44,19 @@ namespace UnitTest.Aplication
             observavel.Application("Testando o numero de palavras em cada frase");
 
             Assert.AreEqual(8, observavel.Words);
+        }
+
+         [TestMethod]
+        public void TestNotifyObservers()
+        {
+            var observadorMock = new Mock<Subscriber>(1, "TestSubscriber");
+            var observavel = new WordsCounter();
+
+            observavel.AddObserver(observadorMock.Object);
+
+            observavel.NotifyObservers();
+
+            observadorMock.Verify(o => o.Update(It.IsAny<WordsCounter>()), Times.Once);
         }
     }
 }
